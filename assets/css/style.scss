@@ -1,0 +1,19 @@
+$baseColor: #ccc;
+$baseFont: bold;
+
+body {
+  background-color: $baseColor;
+  font-weight: $baseFont;
+}
+
+
+/*过渡动效*/
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+  margin-left: 0;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
+  margin-left: 100px;
+}
